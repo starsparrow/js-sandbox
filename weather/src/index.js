@@ -8,11 +8,11 @@ function getFiveDayForecast() {
   }
 		
   return [
-    {day: "Monday", temp: getRandomTemp()},
-    {day: "Tuesday", temp: getRandomTemp()},
-    {day: "Wednesday", temp: getRandomTemp()},
-    {day: "Thursday", temp: getRandomTemp()},
-    {day: "Friday", temp: getRandomTemp()}
+    {day: "Monday", temp: getRandomTemp(), description: "Rainy"},
+    {day: "Tuesday", temp: getRandomTemp(), description: "Sunny"},
+    {day: "Wednesday", temp: getRandomTemp(), description: "Snow"},
+    {day: "Thursday", temp: getRandomTemp(), description: "Thunderstorm"},
+    {day: "Friday", temp: getRandomTemp(), description: "Windy"}
   ];
 }
 
@@ -45,6 +45,7 @@ function Content(props) {
 	      return (<Day
 		       dayName={day.day}
 		       temp={day.temp}
+			   description={day.description}
 		     />)
 	    }) 
 	  }
@@ -59,6 +60,7 @@ function Day(props) {
       <div className="day">
 	<div className="dayName">{props.dayName}</div>
         <div className="temp">{props.temp}&deg;</div>        
+		<div className="description">{props.description}</div>
       </div>
     </div>
   );

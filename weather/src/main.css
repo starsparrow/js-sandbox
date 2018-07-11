@@ -10,15 +10,15 @@ body {
 }
 
 .wrapper {
-  padding: 4px;
+  padding: 10px;
 }
 
 .header {
-	font-size: 16pt;
-	text-align: center;
+  font-size: 16pt;
+  text-align: center;
   background-color: #FFF;
-	border: 1px solid #E0E0E0;
-	border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
   padding: 10px;
 }
 
@@ -44,12 +44,18 @@ body {
 .dayName {
 	font-size: 10pt;
 	color: #2A2A2A;
-  text-align: center;
 	font-style: italic;
+	padding-top: 8px;
 }
 
 .temp {
   font-size: 36pt; 
+}
+
+.description {
+		font-size: 11pt;
+		color: #2A2A2A;
+		text-align: center;
 }
 
 .footer {

@@ -1,2 +1,2 @@
 # weather
-Displays a weather forecast (wip)
+A React app that displays a weather forecast (wip)

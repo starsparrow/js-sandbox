@@ -1,0 +1,99 @@
+<head>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.1/umd/react.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.1/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+<script type="text/babel">
+  
+  const SYMBOL_INCREMENT = "+";
+  const SYMBOL_DECREMENT = "-";
+
+  var posts = [
+    {id: 1, title: "This is an example card title", preview: "Here is a preview of the content contained in this post."},
+	  {id: 2, title: "OMG look at my cat being cute!!!1", preview: "lol imma boot his snoot"},
+	  {id: 3, title: "Automata II is the greatest album ever made", preview: "Change my mind."},
+	  {id: 4, title: "Would you rather fight 100 horse-sized ducks or 10000 duck-sized horses?", preview: "title"}
+  ];
+
+  function Page(props) {
+  	return (
+	  <div>
+	    {
+		    props.posts.map(function(post, index) {
+			    return <Card key={index} title={post.title} preview={post.preview} />;
+		    })
+		  }
+	  </div>
+	);
+  }
+
+  function Card(props) {
+	return (
+	  <div className="card">
+	    <VotingBooth />
+	    <Content title={props.title} preview={props.preview} /> 
+	  </div>
+	);
+  }
+
+  function Content(props) {
+    return (
+	  <div className="content">
+	    <p className="cardTitle">{props.title}</p>
+		<p className="cardPreview">{props.preview}</p>
+	  </div>
+	);
+  }
+
+  class VotingBooth extends React.Component {
+  	constructor(props) {
+	  super(props);
+      this.state = {votes: 0};
+	}
+
+	upvote() {
+	  this.setState((prevState) => {
+	  	return {votes: prevState.votes + 1}
+	  });
+	}
+
+	downvote() {
+	  this.setState((prevState) => {
+	  	return {votes: prevState.votes - 1}
+	  });
+	}
+
+	render() {
+	  return (
+	    <div className="votingBooth">
+		  <UpvoteButton onClick={() => this.upvote()} />
+		  <VoteCount voteCount={this.state.votes} />
+		  <DownvoteButton onClick={() => this.downvote()}/>
+	    </div>
+	  );
+	}
+  }
+
+  function UpvoteButton(props) {
+	return <button className="button" onClick={props.onClick}>{SYMBOL_INCREMENT}</button>;
+  }
+
+  function VoteCount(props) {
+	return <p className="voteCount">{props.voteCount}</p>;
+  }
+
+  function DownvoteButton(props) {
+	return <button className="button" onClick={props.onClick}>{SYMBOL_DECREMENT}</button>;
+  }
+
+  ReactDOM.render(
+	<Page posts={posts} />,
+	document.getElementById('root')
+  );
+
+</script>

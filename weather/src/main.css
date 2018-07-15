@@ -48,14 +48,44 @@ body {
 	padding-top: 8px;
 }
 
-.temp {
+.tempFreezing {
   font-size: 36pt; 
+  color: #1711C6;
+}
+
+.tempCold {
+  font-size: 36pt; 
+  color: #2370AF;
+}
+
+.tempChilly {
+  font-size: 36pt; 
+  color: #058484;
+}
+
+.tempNice {
+  font-size: 36pt; 
+  color: #83B700;
+}
+
+.tempHot {
+  font-size: 36pt; 
+  color: #D8621E;
+}
+
+.tempBurning {
+  font-size: 36pt; 
+  color: #B70000;
 }
 
 .description {
+		background-color: #FBFBFB;
 		font-size: 11pt;
 		color: #2A2A2A;
 		text-align: center;
+		border: 1px solid #E0E0E0;
+		padding-top: 3px;
+		padding-bottom: 3px;
 }
 
 .footer {

@@ -8,7 +8,7 @@ function getFiveDayForecast() {
   }
 		
   return [
-    {day: "Monday", temp: getRandomTemp(), description: "Rainy"},
+    {day: "Monday", temp: getRandomTemp(), description: "Rain"},
     {day: "Tuesday", temp: getRandomTemp(), description: "Sunny"},
     {day: "Wednesday", temp: getRandomTemp(), description: "Snow"},
     {day: "Thursday", temp: getRandomTemp(), description: "Thunderstorm"},
@@ -16,11 +16,11 @@ function getFiveDayForecast() {
   ];
 }
 
-function Forecast() {
+function Forecast(props) {
   return (
     <div className="forecast">
       <Header />
-      <Content forecast={getFiveDayForecast()} />
+      <Content forecast={props.forecast} />
       <Footer />
     </div> 
   );
@@ -43,6 +43,7 @@ function Content(props) {
 	  {
 	    props.forecast.map(function(day, index) {
 	      return (<Day
+		       key={index}
 		       dayName={day.day}
 		       temp={day.temp}
 			   description={day.description}
@@ -55,11 +56,21 @@ function Content(props) {
 }
 
 function Day(props) {
+
+  function getTempClass(temp) {
+    if (temp < 32) {return "tempFreezing";}
+     else if (temp < 45) {return "tempCold";}
+      else if (temp < 65) {return "tempChilly";}
+      else if (temp < 80) {return "tempNice";}
+      else if (temp < 95) {return "tempHot";}
+      else {return "tempBurning";}
+  }
+
   return (
     <div className="wrapper">
       <div className="day">
 	<div className="dayName">{props.dayName}</div>
-        <div className="temp">{props.temp}&deg;</div>        
+        <div className={getTempClass(props.temp)}>{props.temp}</div>        
 		<div className="description">{props.description}</div>
       </div>
     </div>
@@ -76,7 +87,11 @@ function Footer() {
   );
 }
 
-ReactDOM.render(
-  <Forecast />,
-  document.getElementById('root')
-);
+function tick() {
+  ReactDOM.render(
+    <Forecast forecast={getFiveDayForecast()} />,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1500);

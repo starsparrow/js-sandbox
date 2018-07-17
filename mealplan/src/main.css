@@ -1,0 +1,15 @@
+.content {
+  padding: 100px;
+}
+
+.card {
+  margin: 0 auto;
+	width: 600px;
+  border: 1px solid black;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.wrapper {
+  padding: 8px;
+}

@@ -1,0 +1,296 @@
+[{
+	"title": "Pizza",
+	"ingredients": ["flour",
+	"yeast",
+	"sugar",
+	"cheese",
+	"tomato paste",
+	"crushed tomatoes",
+	"pepperoni"]
+},
+{
+	"title": "Burgers",
+	"ingredients": ["ground beef",
+	"buns",
+	"cheese"]
+},
+{
+	"title": "Spicy Pork",
+	"ingredients": ["pork",
+	"gochujang",
+	"rice",
+	"green onions",
+	"ginger",
+	"soy sauce",
+	"sesame oil",
+	"sugar"]
+},
+{
+	"title": "Meatloaf",
+	"ingredients": []
+},
+{
+	"title": "Chicken Corn Chowder",
+	"ingredients": []
+},
+{
+	"title": "Carne Asada Tacos",
+	"ingredients": ["steak",
+	"lime juice",
+	"onions",
+	"cilantro",
+	"tortillas",
+	"olive oil",
+	"soy sauce",
+	"oregano",
+	"garlic"]
+},
+{
+	"title": "Chicken and Dumplings",
+	"ingredients": []
+},
+{
+	"title": "Taco Goop",
+	"ingredients": ["ground beef",
+	"chips",
+	"salsa",
+	"avocado",
+	"shredded lettuce",
+	"hot sauce",
+	"refried beans",
+	"shredded cheese"]
+},
+{
+	"title": "Buffalo Chicken Mac and Cheese",
+	"ingredients": []
+},
+{
+	"title": "Tuna Casserole",
+	"ingredients": ["egg noodles",
+	"cream of mushroom soup",
+	"cheese",
+	"peas",
+	"tuna",
+	"onions",
+	"garlic"]
+},
+{
+	"title": "Beef Stroganoff",
+	"ingredients": ["egg noodles",
+	"sour cream",
+	"beef broth",
+	"beef",
+	"mushrooms"]
+},
+{
+	"title": "Wings",
+	"ingredients": []
+},
+{
+	"title": "Enchiladas",
+	"ingredients": []
+},
+{
+	"title": "Chicken Tikka Masala",
+	"ingredients": []
+},
+{
+	"title": "Vindaloo",
+	"ingredients": []
+},
+{
+	"title": "Breakfast in the Night",
+	"ingredients": ["eggs",
+	"cream cheese",
+	"bacon",
+	"bagels",
+	"avocadoes"]
+},
+{
+	"title": "Thai Curry",
+	"ingredients": []
+},
+{
+	"title": "Pad Thai",
+	"ingredients": []
+},
+{
+	"title": "Omurice",
+	"ingredients": ["eggs",
+	"rice",
+	"peas",
+	"onions",
+	"ham",
+	"cheese",
+	"kimchi",
+	"sesame oil",
+	"sesame seeds",
+	"yum sauce",
+	"ketchup"]
+},
+{
+	"title": "Pad See Ew",
+	"ingredients": []
+},
+{
+	"title": "Pad Kee Mow",
+	"ingredients": []
+},
+{
+	"title": "Parsi Chicken",
+	"ingredients": ["chicken",
+	"figs",
+	"couscous",
+	"tomato paste"]
+},
+{
+	"title": "Spam and Pineapple Fried Rice",
+	"ingredients": []
+},
+{
+	"title": "Split Pea Soup",
+	"ingredients": []
+},
+{
+	"title": "Stir Fry",
+	"ingredients": []
+},
+{
+	"title": "Black Bean Burgers",
+	"ingredients": []
+},
+{
+	"title": "Pot Roast",
+	"ingredients": []
+},
+{
+	"title": "Baked Potatoes",
+	"ingredients": ["potatoes",
+	"butter",
+	"sour cream",
+	"cheese"]
+},
+{
+	"title": "Ribs",
+	"ingredients": []
+},
+{
+	"title": "BBQ Pulled Pork",
+	"ingredients": []
+},
+{
+	"title": "Carnitas",
+	"ingredients": []
+},
+{
+	"title": "Jambalaya",
+	"ingredients": []
+},
+{
+	"title": "Gumbo",
+	"ingredients": []
+},
+{
+	"title": "Risotto",
+	"ingredients": []
+},
+{
+	"title": "Fish and Chips",
+	"ingredients": []
+},
+{
+	"title": "BLTs",
+	"ingredients": []
+},
+{
+	"title": "Dinner Salads",
+	"ingredients": []
+},
+{
+	"title": "Falafel",
+	"ingredients": []
+},
+{
+	"title": "Fajitas",
+	"ingredients": []
+},
+{
+	"title": "Pork Tenderloin and Cheesy Polenta",
+	"ingredients": []
+},
+{
+	"title": "Salmon, Rice, and Asparagus",
+	"ingredients": []
+},
+{
+	"title": "Schnitzel and Brussels Sprouts",
+	"ingredients": []
+},
+{
+	"title": "Roast Chicken and Potatoes",
+	"ingredients": []
+},
+{
+	"title": "Korean Pork Bowls",
+	"ingredients": []
+},
+{
+	"title": "Fried Tofu and Eggplant",
+	"ingredients": []
+},
+{
+	"title": "Sauteed Chicken with Duxelles and Thyme Cream Sauce",
+	"ingredients": []
+},
+{
+	"title": "Pasta Salad",
+	"ingredients": []
+},
+{
+	"title": "Souvlaki and Greek Salad",
+	"ingredients": []
+},
+{
+	"title": "Penne Puttanesca and Meatballs",
+	"ingredients": []
+},
+{
+	"title": "Braised Beef",
+	"ingredients": []
+},
+{
+	"title": "Vegetable Lasagna",
+	"ingredients": []
+},
+{
+	"title": "Angel Hair Pasta with Zucchini",
+	"ingredients": []
+},
+{
+	"title": "Kebabs",
+	"ingredients": []
+},
+{
+	"title": "Paninis",
+	"ingredients": []
+},
+{
+	"title": "Chili",
+	"ingredients": []
+},
+{
+	"title": "Chicken Noodle Soup",
+	"ingredients": []
+},
+{
+	"title": "Potato Leek Soup",
+	"ingredients": []
+},
+{
+	"title": "Fried Chicken and Mashed Potatoes",
+	"ingredients": []
+},
+{
+	"title": "Korean Fried Chicken",
+	"ingredients": []
+}]

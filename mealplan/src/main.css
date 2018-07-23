@@ -1,15 +1,57 @@
+body {
+  background-color: #BBB;
+}
+
 .content {
   padding: 100px;
 }
 
 .card {
+	background-color: #990000;
+	color: #FFF;
   margin: 0 auto;
 	width: 600px;
   border: 1px solid black;
-	border-radius: 6px;
+	border-radius: 2px;
 	text-align: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.refresh {
+  background-color: #FFF;
+	color: #990101;
+	margin: 0 auto;
+	width: 600px;
+	border: 1px solid black;
+	border-radius: 2px;
+	text-align: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+.shoppinglist {
+				background-color: #EDEBEB;
+				border: 1px solid black;
+				border-radius: 2px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				padding-left: 50px;
+				margin: 0 auto;
+				width: 550px;
 }
 
 .wrapper {
-  padding: 8px;
+  padding: 2px;
 }
